@@ -24,3 +24,6 @@ var DefaultEvictionHard = map[string]string{
 	"nodefs.available":  "10%",
 	"imagefs.available": "15%",
 }
+
+// DefaultDNSOptionsValue includes default dns options
+var DefaultDNSOptionsValue = []string{"ndots:5"}

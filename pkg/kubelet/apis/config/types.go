@@ -217,6 +217,8 @@ type KubeletConfiguration struct {
 	// ResolverConfig is the resolver configuration file used as the basis
 	// for the container DNS resolution configuration.
 	ResolverConfig string
+	// DefaultDNSOptions is the list of default dns options. Default 'ndots:5'.
+	DefaultDNSOptions []string
 	// cpuCFSQuota enables CPU CFS quota enforcement for containers that
 	// specify CPU limits
 	CPUCFSQuota bool

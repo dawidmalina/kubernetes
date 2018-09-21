@@ -459,6 +459,8 @@ type KubeletConfiguration struct {
 	// Default: "/etc/resolv.conf"
 	// +optional
 	ResolverConfig string `json:"resolvConf,omitempty"`
+	// DefaultDNSOptions is the list of default dns options. Default 'ndots:5'.
+	DefaultDNSOptions []string `json:"defaultDNSOptions,omitempty"`
 	// cpuCFSQuota enables CPU CFS quota enforcement for containers that
 	// specify CPU limits.
 	// Dynamic Kubelet Config (beta): If dynamically updating this field, consider that

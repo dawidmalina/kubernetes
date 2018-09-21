@@ -155,6 +155,9 @@ func SetDefaults_KubeletConfiguration(obj *kubeletconfigv1beta1.KubeletConfigura
 	if obj.ResolverConfig == "" {
 		obj.ResolverConfig = kubetypes.ResolvConfDefault
 	}
+	if obj.DefaultDNSOptions == nil {
+		obj.DefaultDNSOptions = DefaultDNSOptionsValue
+	}
 	if obj.CPUCFSQuota == nil {
 		obj.CPUCFSQuota = utilpointer.BoolPtr(true)
 	}

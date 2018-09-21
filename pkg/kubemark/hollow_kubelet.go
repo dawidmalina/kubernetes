@@ -155,6 +155,7 @@ func GetHollowKubeletConfig(
 	c.RegistryBurst = 10
 	c.RegistryPullQPS = 5.0
 	c.ResolverConfig = kubetypes.ResolvConfDefault
+	c.DefaultDNSOptions = kubetypes.DefaultDNSOptionsValue
 	c.KubeletCgroups = "/kubelet"
 	c.SerializeImagePulls = true
 	c.SystemCgroups = ""
